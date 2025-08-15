@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <!-- Link para a fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <!-- Canvas para a grade do jogo -->
+        <canvas id="canvas"></canvas>
+        
+        <!-- Painel lateral para pontuação, próxima peça e controles -->
+        <div class="side-panel">
+            <div class="panel-box">
+                <h2>PONTOS</h2>
+                <p id="score">0</p>
+            </div>
+            <div class="panel-box">
+                <h2>PRÓXIMA</h2>
+                <canvas id="next-shape-canvas" width="160" height="160"></canvas>
+            </div>
+             <div class="controls panel-box">
+                <h2>CONTROLES</h2>
+                <p>Esquerda/Direita: Mover</p>
+                <p>Cima: Girar</p>
+                <p>Baixo: Acelerar</p>
+                <p>Enter: Reiniciar</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Imagem de sprite oculta para os blocos do Tetris -->
+    <img id="image" src="https://i.imgur.com/Wq9d4Nl.png" alt="Blocos de Tetris" style="display: none;" onerror="this.style.display='none'">
+
+    <!-- Link para o arquivo de script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* --- ESTILOS GERAIS --- */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* --- ESTILOS DO JOGO --- */
+canvas {
+    background-color: #0f0c29;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(234, 172, 255, 0.5);
+}
+
+.game-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* --- PAINEL LATERAL --- */
+.side-panel {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.panel-box {
+    background-color: #0f0c29;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.panel-box h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #e94560;
+}
+
+.panel-box p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #f0f0f0;
+}
+
+/* --- CONTROLES --- */
+.controls {
+    margin-top: 2rem;
+}
+
+.controls h2 {
+     color: #e94560;
+}
+
+.controls p {
+    margin: 5px 0;
+    font-size: 0.8rem;
+}
